@@ -18,7 +18,7 @@ const Category = () => {
             let res = await postByCategory(categoryID)
             setList(res);
         })()
-    },[])
+    },[categoryID])
 
 
     return (

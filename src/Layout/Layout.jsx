@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
                     <li><NavLink to="/">হোম</NavLink></li>
                         {
                             categories.map((category, id) => {
-                                return <li key={id}><NavLink to={"/byCatgory/"+category["id"]}>{category['name']}</NavLink></li>
+                                return <li key={id.toString()}><NavLink to={"/byCatgory/"+category["id"]}>{category['name']}</NavLink></li>
                             })
                         }
                     </ul>
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
                         <li><NavLink to="/">হোম</NavLink></li>
                         {
                             categories.map((category, id) => {
-                                return <li key={id}><NavLink to={"/byCatgory/"+category["id"]}>{category['name']}</NavLink></li>
+                                return <li key={id.toString()}><NavLink to={"/byCatgory/"+category["id"]}>{category['name']}</NavLink></li>
                             })
                         }
                     </ul>
