@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { postCategories } from "../APIRequest/APIRequest";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Layout = ({ children }) => {
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
                     </ul>
                     </div>
 
-                    <a className="btn btn-ghost normal-case text-xl">Bloggy</a>
+                    <a className="btn btn-ghost normal-case text-xl"><Link to={'/'}>Bloggy</Link></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
