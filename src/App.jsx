@@ -1,16 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
+import Category from "./Pages/Category";
+import DetailsPage from "./Pages/DetailsPage";
 
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <button className="btn btn-outline btn-info">Info</button>
-<button className="btn btn-outline btn-success">Success</button>
-<button className="btn btn-outline btn-warning">Warning</button>
-<button className="btn btn-outline btn-error">Error</button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage></HomePage>}  />
+        <Route path="/about" element={<AboutPage></AboutPage>} />
+        <Route path="/byCatgory/:categoryID" element={<Category></Category>} />
+        <Route path="/details/:postID" element={<DetailsPage></DetailsPage>} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
