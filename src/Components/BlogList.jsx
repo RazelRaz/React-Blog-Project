@@ -16,7 +16,7 @@ const BlogList = (props) => {
                                         <h2 className="card-title">{item['title']}</h2>
                                         <p>{item['short']}</p>
                                         <div className="card-actions justify-end">
-                                        <button className="btn btn-primary"><Link to={'/'}>See Details</Link></button>
+                                        <button className="btn btn-primary"><Link to={'/details/'+item['id']}>See Details</Link></button>
                                         </div>
                                     </div>
                                 </div>
