@@ -1,10 +1,12 @@
+import Layout from "../Layout/Layout";
 
 
 const DetailsPage = () => {
     return (
-        <div>
+        <Layout>
             <h1>Details Page</h1>
-        </div>
+        </Layout>
+            
     );
 };
 

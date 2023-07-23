@@ -1,10 +1,10 @@
-
+import Layout from "../Layout/Layout";
 
 const AboutPage = () => {
     return (
-        <div>
+        <Layout>
             <h1>About Page</h1>
-        </div>
+        </Layout>
     );
 };
 
